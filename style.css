@@ -1,0 +1,88 @@
+/*Aquí va el comentario*/
+body{
+    /*RGB red green blue*/
+    background-color: lightcyan;
+    color: black; 
+    font-family: font-family: 'Nunito', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+p{
+    color:black;
+    text-align: justify;
+    font-size: 35px;
+}
+
+h1{
+    color:black;
+    font-size:45px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2{
+    color: crimson;
+    font-size:40px;
+    text-align: center;
+}
+
+h3{
+    color:coral;
+    font-size: 37px;
+    text-align: center;
+}
+/*Para agregar clase, ponemos ( . ) antes del nombre*/
+
+.titulo-principal{
+    color: black;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: -2px -2px 3px royalblue;
+
+}
+
+.titulo-web{
+    color:black;
+    font-size: 50px;
+    text-align: center;
+}
+
+.lista-ord{
+    color: black;
+    font-size: 35px;
+    text-align:justify;
+}
+
+.lista-no-ord{
+    color: black;
+    font-size: 35px;
+    text-align:justify;
+}
+
+img{
+    width: 350px;
+    height: 200px;
+    display: inline-block;
+}
+
+.max-copy{
+    width: 300px;
+    height: 250px;
+}
+
+.imagen-profeA{
+    align-content: center;
+}
+
+.img1{
+    align-self: center;
+}
+ label{
+    color: rgb(255, 26, 198);
+    font-size: 30px;
+ }
+
+ input{
+    color:chartreuse;
+ }
+
