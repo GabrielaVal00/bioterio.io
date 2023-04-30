@@ -1,142 +1,388 @@
-<!--DOCTYPE le dice al navegador que este archivo es html-->
 <!DOCTYPE html>
-
 <html lang="es">
-    <head>
-     <!--Titulos-->
-       <title> Bioterios</title>
-     <!--Conectar con CSS-->
-       <link rel="stylesheet" href="style.css">
-     <!--Agregar fuente de css-->
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-
-
-    </head>
-
-    <!--Dentro de mi body (cuerpo) vamos a poner lo que el usarix ve-->
-    <body>
-      <h1 class="titulo-principal"> Bioterios</h1>
-      <h2 class="titulo-web"> Investigación científica</h2>
- 
-
-
-    <!--Main-->
-    <main>
-        <h2>¿Cuál es la función de un bioterio?</h2>
-        <p>La función de los bioterios es impulsar la experimentación animal para la investigación científica. Estos pueden ser de universidades, intituciones privados o instituciones nacionales del gobierno. 
-          Es importante mencionar que los bioterios siempre tienen en cuenta las 3R: Remplazar, Reducir y Refinar. Con esto se tiene presente la bioética. </p>
-        <h2>¿Cuántos tipos de bioterios hay?</h2>
-        <p>En <strong> México </strong> se clasifican tres tipos de bioterios de acuerdo a las autoridades federales, los cuales son los siguientes:</p>
-        <div>
-            <!--Lista ordenada (ol)-->
-            <!--se puso li*(#) y #denota cualquier numero y sale el numero que quieres agregar, por si son listas muy grandes-->
-            <ol class="lista-ord">
-                <li> <em>Tipo A.</em> Producción, crianza, manutención/ distribución</li>
-                <li> <em>Tipo B.</em> Experimentación, investigación científica, desarrollo tecnológico, pruebas de laboratorio y enseñanza</li>
-                <li> <em>Tipo C.</em> Mixto: Incluye la combinación de los dos anteriores</li>
-            </ol>
-            <img src="https://i0.wp.com/www.rxleaf.com/wp-content/uploads/2019/04/shutterstock_1297310617.jpg?resize=700%2C394&ssl=1" alt="" class="img1">
-        <h2>¿En la Ciudad de México cuántos bioterios hay?</h2>
-        <p> Hay aproximadamente 19 bioerios alrededor de la Ciudad de México y en Ciudad Universitaria hay 5 y son los siguientes:</p>
-             <!--Lista no ordenada (ul)-->
-             <!--elemento para letras cursivas <em>-->
-             <!--se puso li*(#) y #denota cualquier numero y sale el numero que quieres agregar, por si son listas muy grandes-->
-             <ul class="lista-no-ord">
-                <li>Bioterio en el Instituto de Fisiología Celular</li>
-                <li>Bioterio del Instituto de Investigaciones Holland</li>
-                <li>Bioterio de la Facultad de Ciencias</li>
-                <li>Bioterio de la Unidad de Investigación Preclínica, Facultad de Química</li>
-                <li>Bioterio de la Unidad de Experimentación Animal, Facultad de Química</li>
-             </ul>
-         <!--Atributos son arc (SOURCE (de donde viene))-->
-        
-        <img src="https://www.fciencias.unam.mx/sites/default/files/Imgs/Labs%20y%20talleres/bioterio/bioterio3.jpg" alt="" >
-        <br>
-        <img src="/Imagenes/Profesor Agustin.jpg">
-        <br>
-         <!--si se pone "./" esto nos dice en que folder estamos posicionados-->
-         <!--se se pone "../ esto hará que nos salgamos del folder en el que estamos posicionados"-->
-        <img src="/Imagenes/pngwing.com.png" alt="Hámster dorado">
-
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Gabriela Valeria">
+    <meta name="description" content="Portafolio de desarrollo web de Gabriela Valeria Carrillo González">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Gabriela Valeria | Desarrollo Web Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
 
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-iamgen-desarrollador square" 
+        src= "yoo.jpg" alt="Foto de Gabriela Valeria" height="300px" width="400px">
+        <h1>Hola, soy Gabriela Valeria Carrillo González</h1>
+      <!--<h2>De profesión soy bióloga con diversos intereses sobre la vida (en especial con otros animales) pero también desarrollo sitios web.</h2>-->
 
-         <!--elementos internos (Navegación)-->
-          <a href="#parrafo-1">Manejo</a>
-          <a href="#parrafo-2">Concentraciones</a>
-          <a href="#parrafo-3">Bioética</a>
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="/chicas.png" alt="Chica programando">
 
+        <img class="hero-inferior-imagen II img-fluid" src="/3298949.jpg" alt="chica en laboratorio">
 
-          <h3 id="parrafo-1">Lo que debes de hacer antes de realizar un procedimiento</h3>
-          <p>Antes de entrar a un bioterio es escencial que el investigador se encuentre calmado, ya que su actitud influye en el trato con los animales, además de eso debe estar limpio y siempre debe usar bata, pijama quirúrjica, botas de laboratorio, guantes y cofía. </p>
+      </div>
+    </section>
 
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Gabriela Valeria Carrillo González</h2>
+        <p class="seccion-texto">Actualmente soy tesista, mi tesis trata de los efectos de la urbanización sobre el ectoparasitismo y el posible riesgo de enfermedades zoonóticas. A lo largo de mi tesis he desarrollado técnicas de laboratorio para la identificación de presencia/ausencia de patógenos, manejo de animales silvestres y de bioterio, pero también me permitio entender la importancia de estar a la vanguardia de la tecnología, la gestión de bases de datos, el uso de la estadística para el análisis e interpretación. Por esa razón, me interesa la programación y el desarrollo de páginas web para trabajar con variables ambientales y crear modelos que permitan la solución a problemas sobre los recursos naturales, la huella hídrica y de carbono, efectos de borde, etc. </p>
+      </div>
+    </section>
 
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="worker"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Habilidades </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Artículos</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Escribir</span>
+              <span class="badge text-bg-primary">Editar</span>
+              <span class="badge text-bg-primary">Blogs</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Tecnolochicas PRO</span>
+              <span class="badge text-bg-primary">Desarrollo Web</span>
+              <span class="badge text-bg-primary">Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-         <h3 id="parrafo-2">¿Cómo calcular las concentraciones para la antestesia?</h3>
-         <p>Para poder anestesiar un animal de bioterio depende principalmente de la especie con la que se este trabajando, ya que existen diferentes zonas corporales en donde se pondrá el anestésico. Otro dato importante es saber que tipo de aguja se va a utilizar, ya que existen tejidos blandos o duros y la concentración siempre dependerá del peso </p>
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto1.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto2.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 2</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto3.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto4.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto5.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 5</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto6.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 6</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
 
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">Artículos</h2>
+      <div class="card">
+        <div class="card-header">
+          Más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://nancynsalazar.medium.com/gu%C3%ADa-r%C3%A1pida-para-construir-tu-portafolio-como-programador-a-9f02daeabb12" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Guía rápida para construir tu portafolio como programador(a)
+            </li>
+          </a>
+          <a href="https://nancynsalazar.medium.com/c%C3%B3mo-ser-un-a-mejor-programador-a-749c1bf98990" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Cómo ser un(a) mejor programador(a)
+            </li>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Python leer archivo JSON - cómo cargar JSON desde un archivo y procesar dumps
+            </li>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Python cómo escribir en un archivo - abrir, leer, escribir y otras funciones de archivos explicadas
+            </li>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              ¿Para qué se usa Python? 10+ usos del lenguaje de programación Python
+            </li>
+          </a>
+        </ul>
+      </div>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más artículos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
 
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente1.svg" alt="Foto de Gino">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Gino</p>
+                <p class="cargo">Gerente de proyectos en DesarrolloWeb</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente2.svg" alt="Foto de Nora">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Nora</p>
+                <p class="cargo">Gerente de DiseñaMiPáginaWeb</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente3.svg" alt="Foto de Leonardo">
+              <p class="testimonio-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel iaculis urna. Fusce a ornare enim, vel interdum turpis. Sed aliquam interdum nisi a placerat.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Leonardo</p>
+                <p class="cargo">Director de AprendeAProgramar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
 
-         <h3 id="parrafo-3">Bioética, respeto por los animales</h3>
-         <p>Uno de los principales objetivos en un bioterio es que siempre se debe tratar de hacer las técnicas más eficientes, porque se debe reducir el consumo de animales. Además siempre se debe trabajar con los animales desde un punto de vista de respeto y cariño, sus habitats deben estar limpios, con agua y comida. Siempre se debe evitar el dolor durante los tratamientos a emplear.</p>
-
-
-         <!--enlaces externos-->
-         <p>en este <a href="https://pagina.fciencias.unam.mx/vida-en-ciencias/instalaciones/instalaciones-academicas/bioterio"> link </a></p>
-
-         <a href="https://pagina.fciencias.unam.mx/vida-en-ciencias/instalaciones/instalaciones-academicas/bioterio"><img class="max-copy"  src="https://www.argentina.gob.ar/sites/default/files/fondo_bioterios.jpg" alt=""></a>
-
-         <!--formulario con radio-->
-         <p>¿Para estudios sobre epilepsia es mejor el hámster o el jerbo?</p>
-         <!--Opción hámster-->
-          <label for="hámster">
-            <input id="hámster" type="radio"
-            value="hámster" name="tipo de animal"> hámster🐁
-          </label>
-         <!--Opción jerbo-->
-          <label for="jerbo">
-            <input id="jerbo" type="radio"
-            value="jerbo" name="tipo de animal"> jerbo🐭
-          </label>
-        
-         <!--Formulario con checkbox-->
-         <p>¿Qué tipo de estudios se realizan con los animales del bioterio de la Facultad de Ciencias?</p>
-
-         <label for="Obesidad y diabetes">
-            <input id="Obesidad y diabetes" type="checkbox"
-            value="Obesidad y diabetes" name="Tipo de estudios"> Obesidad y diabetes🩸
-         </label>
-
-
-         <label for="Obesidad y depresión">
-            <input id="Obesidad y depresión" type="checkbox"
-            value="Obesidad y depresión" name="Tipo de estudios"> Obesidad y depresión 😪
-         </label>
-
-
-         <label for="Çáncer">
-            <input id="Cáncer" type="checkbox"
-            value="Cáncer" name="Tipo de estudios"> Cáncer 🧬
-         </label>
-        
-
-         <label for="Cuidados parentales">
-            <input id="Cuidados parentales" type="checkbox"
-            value="Cuidados parentales" name="Tipo de estudios"> Cuidados parentales 👪
-         </label>
-
-    </main>
-    <!--Footer esta dentro de body-->
-      <footer>
-         <p> Página creada por Gabriela Valeria en <a href="https://tecnolochicas.mx/">Tecnolochicas 💝</a>
-         </p>
-      </footer>
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:janedoe@micorreo.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:janedoe@micorreo.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Jane Doe (2022) &#169;</div>
+    </footer>
 
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
 </html>
-  
-
-
